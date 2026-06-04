@@ -1,0 +1,3 @@
+{
+  "extends": "@pionnoir/config/tsconfig.base.json"
+}
