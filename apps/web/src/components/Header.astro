@@ -1,21 +1,9 @@
----
-const links = [
-  { to: "/", label: "Home" },
-];
----
-
-<div>
-  <div class="flex flex-row items-center justify-between px-4 py-2 md:px-6">
-    <nav class="flex gap-4 text-lg">
-      {links.map((link) => (
-        <a href={link.to} class="text-white hover:text-neutral-400 transition-colors">
-          {link.label}
-        </a>
-      ))}
-    </nav>
-    <div class="flex items-center gap-2" id="user-menu-container">
-    </div>
+<header class="border-b border-neutral-800">
+  <div class="mx-auto flex max-w-6xl items-center gap-4 px-6 py-5">
+    <img src="/pion-noir-logo.svg" alt="Pion Noir logo" class="h-12 w-auto" />
+    <a href="/" class="font-['Syndication_JNL'] text-2xl tracking-[0.2em] text-white">
+      PION NOIR
+    </a>
   </div>
-  <hr class="border-neutral-800" />
-</div>
+</header>
 
