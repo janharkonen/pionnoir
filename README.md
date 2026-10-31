@@ -1,41 +1,24 @@
 # pionnoir
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Astro, and more.
+Static website for Pion Noir Oy, served as raw HTML.
 
-## Features
+## Files
 
-- **TypeScript** - For type safety and improved developer experience
-- **Astro** - The web framework for content-driven websites
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **Turborepo** - Optimized monorepo build system
+- `index.html` - the whole site (markup and inline CSS)
+- `pion-noir-logo.svg` - logo, also used as the SVG favicon
+- `favicon.ico` - fallback favicon
 
-## Getting Started
+## Running locally
 
-First, install the dependencies:
-
-```bash
-pnpm install
-```
-
-Then, run the development server:
+Open `index.html` directly, or serve the folder:
 
 ```bash
-pnpm run dev
+python3 -m http.server 4321
 ```
 
-Open [http://localhost:4321](http://localhost:4321) in your browser to see the web application.
+## Docker
 
-## Project Structure
-
+```bash
+docker build -t pionnoir .
+docker run -p 8080:80 pionnoir
 ```
-pionnoir/
-├── apps/
-│   ├── web/         # Frontend application (Astro)
-```
-
-## Available Scripts
-
-- `pnpm run dev`: Start all applications in development mode
-- `pnpm run build`: Build all applications
-- `pnpm run dev:web`: Start only the web application
-- `pnpm run check-types`: Check TypeScript types across all apps
